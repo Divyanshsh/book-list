@@ -7,6 +7,7 @@
 header{
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(to right top,#53edc7, #89cde8,#30a9d9,#179cd1,#17d1a3);
 }
 
 .alert1{
@@ -70,7 +71,7 @@ header{
 
 .container{
     position: absolute;
-    left: 43%;
+    left: 37%;
     top: 20%;
 }
 
@@ -85,19 +86,23 @@ header{
 .container input{
     width: 400px;
     height: 30px;
+    border: 2px solid #23a2cc;
 }
 
 .container button{ 
    width: 100px;
    height: 30px;
+   border: 2px solid #23a2cc;
+   cursor: pointer;
 }
 
 .list{
     position: absolute;
-    left: 38%;
+    left: 34%;
     top: 60%;
 }
 
 .list tr th{
     padding: 60px;
 }
+
