@@ -6,18 +6,14 @@ let button = document.querySelector(".button");
 button.addEventListener("click", function (e) {
     function addBook() {
         if (input1.value == '' || input2.value == '' || input3.value == '') {
-            // let alert = document.querySelector(".alert");
             let alert2 = document.querySelector(".alert2");
             let second = document.querySelector(".second");
-            // alert.style.display = "block";
             alert2.style.display = "block";
             second.style.display = "block";
 
             setTimeout(function () {
-                // let alert = document.querySelector(".alert");
                 let alert2 = document.querySelector(".alert2");
                 let second = document.querySelector(".second");
-                // alert.style.display = "none";
                 alert2.style.display = "none";
                 second.style.display = "none";
             }, 2000);
@@ -31,19 +27,14 @@ button.addEventListener("click", function (e) {
             `
             table.appendChild(row);
 
-            // let alert1 = document.querySelector(".alert1");
             let alert1 = document.querySelector(".alert1");
             let first = document.querySelector(".first");
-            // alert.style.display = "block";
             alert1.style.display = "block";
             first.style.display = "block";
-            // alert1.style.backgroundColor = "none";
 
             setTimeout(function () {
-                // let alert = document.querySelector(".alert");
                 let alert1 = document.querySelector(".alert1");
                 let first = document.querySelector(".first");
-                // alert.style.display = "none";
                 alert1.style.display = "none";
                 first.style.display = "none";
             }, 2000);
@@ -61,32 +52,44 @@ del.addEventListener("click", function (e) {
         let input2 = document.querySelector(".input2");
         let input3 = document.querySelector(".input3");
         if (input1.value == '' || input2.value == '' || input3.value == '') {
-            // let alert = document.querySelector(".alert");
             let alert3 = document.querySelector(".alert3");
             let third = document.querySelector(".third");
-            // alert.style.display = "block";
             alert3.style.display = "block";
             third.style.display = "block";
 
             setTimeout(function () {
-                // let alert = document.querySelector(".alert");
                 let alert3 = document.querySelector(".alert3");
                 let third = document.querySelector(".third");
-                // alert.style.display = "none";
                 alert3.style.display = "none";
                 third.style.display = "none";
             }, 2000);
-        } else {
-            // let table = document.querySelector(".table");
-            // let tr = document.querySelector(".row");
-            // table.remove(tr);
-            let valueList = [`${input.value}`];
-            let i;
-            for(i=0; i <= valueList.length; i++)
-            {
-                valueList[`${input.value}`].remove();
-            }
+        } else 
+        
+        if (table.firstElementChild.nextElementSibling === null) {
+            let alert5 = document.querySelector(".alert5");
+            let five = document.querySelector(".five");
+            alert5.style.display = "block";
+            five.style.display = "block";
 
+            setTimeout(function () {
+                let alert5 = document.querySelector(".alert5");
+                let five = document.querySelector(".five");
+                alert5.style.display = "none";
+                five.style.display = "none";
+            }, 2000);
+        } else {
+            table.firstElementChild.nextElementSibling.remove();
+            let alert4 = document.querySelector(".alert4");
+            let four = document.querySelector(".four");
+            alert4.style.display = "block";
+            four.style.display = "block";
+
+            setTimeout(function () {
+                let alert4 = document.querySelector(".alert4");
+                let four = document.querySelector(".four");
+                alert4.style.display = "none";
+                four.style.display = "none";
+            }, 2000);
         }
     }
     deleteList();

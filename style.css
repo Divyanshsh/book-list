@@ -9,12 +9,6 @@ header{
     justify-content: center;
 }
 
-/* .alert{
-  display: flex;
-  height: 30px;
-  display: none;
-} */
-
 .alert1{
     background-color: #1bd152;
     height: 30px;
@@ -27,7 +21,7 @@ header{
 
 
 .alert2{
-    background-color: #f54336;
+    background-color: #f0ea48;
     height: 30px;
     display: none;
 }
@@ -37,7 +31,7 @@ header{
 }
 
 .alert3{
-    background-color: #f54336;
+    background-color: #f0ea48;
     height: 30px;
     display: none;
 }
@@ -53,6 +47,16 @@ header{
 }
 
 .four{
+    padding: 7px;
+}
+
+.alert5{
+    background-color: #f5cb36;
+    height: 30px;
+    display: none;
+}
+
+.five{
     padding: 7px;
 }
 
